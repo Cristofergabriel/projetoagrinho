@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho - Educação e Sustentabilidade</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 0 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-        .content {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Agrinho - Educação e Sustentabilidade</h1>
-    </header>
-    <div class="container">
-        <div class="content">
-            <h2>Bem-vindo ao Agrinho!</h2>
-            <p>O Agrinho é um projeto educacional que promove a educação para a sustentabilidade e o desenvolvimento rural.</p>
-            <p>Explore nosso site para descobrir mais sobre nossos programas e recursos educacionais.</p>
+        <div class="container">
+            <h1>Agrinho</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#programas">Programas</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Bem-vindo ao Agrinho</h2>
+            <p>O Agrinho é um projeto educacional que promove a educação para a sustentabilidade e o desenvolvimento rural.</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre o Agrinho</h2>
+            <p>O Agrinho é um programa desenvolvido pelo SENAR e pela FAMATO que visa promover a educação no campo através de ações educativas.</p>
+        </div>
+    </section>
+
+    <section id="programas" class="section">
+        <div class="container">
+            <h2>Nossos Programas</h2>
+            <div class="programa">
+                <h3>Programa 1: Educação Ambiental</h3>
+                <p>Descrição do programa de educação ambiental do Agrinho.</p>
+            </div>
+            <div class="programa">
+                <h3>Programa 2: Agricultura Sustentável</h3>
+                <p>Descrição do programa de agricultura sustentável do Agrinho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="section">
+        <div class="container">
+            <h2>Recursos Educacionais</h2>
+            <ul>
+                <li><a href="#">Vídeos educativos</a></li>
+                <li><a href="#">Material didático</a></li>
+                <li><a href="#">Jogos educativos</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Agrinho - Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Agrinho - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
 </body>
+
 </html>
