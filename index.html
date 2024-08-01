@@ -1,89 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho - Educação e Sustentabilidade</title>
+    <title>Programa Agrinho</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <div class="container">
-            <h1>Agrinho</h1>
+            <h1>Programa Agrinho</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#programas">Programas</a></li>
-                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h2>Bem-vindo ao Agrinho</h2>
-            <p>O Agrinho é um projeto educacional que promove a educação para a sustentabilidade e o desenvolvimento rural.</p>
-        </div>
-    </section>
-
     <section id="sobre" class="section">
         <div class="container">
             <h2>Sobre o Agrinho</h2>
-            <p>O Agrinho é um programa desenvolvido pelo SENAR e pela FAMATO que visa promover a educação no campo através de ações educativas.</p>
+            <p>O Agrinho é um programa...</p>
         </div>
     </section>
 
-    <section id="programas" class="section">
+    <section id="projetos" class="section">
         <div class="container">
-            <h2>Nossos Programas</h2>
-            <div class="programa">
-                <h3>Programa 1: Educação Ambiental</h3>
-                <p>Descrição do programa de educação ambiental do Agrinho.</p>
+            <h2>Nossos Projetos</h2>
+            <div class="projeto">
+                <h3>Projeto 1</h3>
+                <p>Descrição do Projeto 1.</p>
             </div>
-            <div class="programa">
-                <h3>Programa 2: Agricultura Sustentável</h3>
-                <p>Descrição do programa de agricultura sustentável do Agrinho.</p>
+            <div class="projeto">
+                <h3>Projeto 2</h3>
+                <p>Descrição do Projeto 2.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="recursos" class="section">
-        <div class="container">
-            <h2>Recursos Educacionais</h2>
-            <ul>
-                <li><a href="#">Vídeos educativos</a></li>
-                <li><a href="#">Material didático</a></li>
-                <li><a href="#">Jogos educativos</a></li>
-            </ul>
         </div>
     </section>
 
     <section id="contato" class="section">
         <div class="container">
             <h2>Entre em Contato</h2>
-            <form action="#" method="POST">
+            <form action="enviar.php" method="POST">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar Mensagem</button>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Agrinho - Todos os direitos reservados.</p>
+            <p>&copy; 2024 Programa Agrinho. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <script src="scripts.js"></script>
 </body>
-
 </html>
